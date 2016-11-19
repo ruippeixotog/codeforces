@@ -25,5 +25,6 @@ The following is the list of the problems solved. Each problem identifier is spe
 ### Codeforces Round #379 (Div. 2)
 
 * ✓ A. Anton and Danik (`734A`)
+* ✓ A. Anton and Digits (`734B`)
 
 [1]: http://codeforces.com
