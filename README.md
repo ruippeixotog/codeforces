@@ -25,6 +25,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 ### Codeforces Round #379 (Div. 2)
 
 * ✓ A. Anton and Danik (`734A`)
-* ✓ A. Anton and Digits (`734B`)
+* ✓ B. Anton and Digits (`734B`)
+* ✓ C. Anton and Making Potions (`734C`)
 
 [1]: http://codeforces.com
