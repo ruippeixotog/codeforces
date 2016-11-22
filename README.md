@@ -27,6 +27,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Anton and Danik (`734A`)
 * ✓ B. Anton and Digits (`734B`)
 * ✓ C. Anton and Making Potions (`734C`)
-* ✓ C. Anton and Chess (`734D`)
+* ✓ D. Anton and Chess (`734D`)
+* ✓ E. Anton and Tree (`734E`)
 
 [1]: http://codeforces.com
