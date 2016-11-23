@@ -29,5 +29,6 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Anton and Making Potions (`734C`)
 * ✓ D. Anton and Chess (`734D`)
 * ✓ E. Anton and Tree (`734E`)
+* ✓ F. Anton and School (`734F`)
 
 [1]: http://codeforces.com
