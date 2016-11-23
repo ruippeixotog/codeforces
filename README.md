@@ -31,4 +31,8 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ E. Anton and Tree (`734E`)
 * ✓ F. Anton and School (`734F`)
 
+### Codeforces Round #380 (Div. 2)
+
+* ✓ A. Interview with Oleg (`738A`)
+
 [1]: http://codeforces.com
