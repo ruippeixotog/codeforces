@@ -37,5 +37,6 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. Spotlights (`738B`)
 * ✓ C. Road to Cinema (`738C`)
 * ✓ D. Sea Battle (`738D`)
+* ✓ E. Subordinates (`738E`)
 
 [1]: http://codeforces.com
