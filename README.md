@@ -36,5 +36,6 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Interview with Oleg (`738A`)
 * ✓ B. Spotlights (`738B`)
 * ✓ C. Road to Cinema (`738C`)
+* ✓ D. Sea Battle (`738D`)
 
 [1]: http://codeforces.com
