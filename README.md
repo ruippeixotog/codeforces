@@ -39,4 +39,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ D. Sea Battle (`738D`)
 * ✓ E. Subordinates (`738E`)
 
+### Codeforces Round #382 (Div. 2)
+
+* ✓ A. Ostap and Grasshopper (`735A`)
+* ✓ B. Urbanization (`735B`)
+* ✓ C. Tennis Championship (`735C`)
+* ✓ D. Taxes (`735D`)
+
 [1]: http://codeforces.com
