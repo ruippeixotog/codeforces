@@ -1,21 +1,8 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
-#define MAXN 200000
-#define INF 1000000000
+#define MAXN 100
 
 using namespace std;
-
-typedef long long ll;
-typedef long double ld;
 
 char line[MAXN];
 int n, k, g, t;
