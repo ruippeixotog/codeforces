@@ -38,6 +38,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Road to Cinema (`738C`)
 * ✓ D. Sea Battle (`738D`)
 * ✓ E. Subordinates (`738E`)
+* ✓ F. Financiers Game (`738F`)
 
 ### Codeforces Round #382 (Div. 2)
 
