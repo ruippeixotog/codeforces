@@ -40,6 +40,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ E. Subordinates (`738E`)
 * ✓ F. Financiers Game (`738F`)
 
+### Codeforces Round #381 (Div. 2)
+
+* ✓ A. Alyona and copybooks (`740A`)
+* ✓ B. Alyona and flowers (`740B`)
+
 ### Codeforces Round #382 (Div. 2)
 
 * ✓ A. Ostap and Grasshopper (`735A`)
