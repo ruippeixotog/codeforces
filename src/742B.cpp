@@ -14,7 +14,7 @@ int hist[MAXA + 1];
 int main() {
   int n, x; scanf("%d %d\n", &n, &x);
   for(int i = 0; i < n; i++) {
-    scanf("%d\n", &a[i]);
+    scanf("%d", &a[i]);
     hist[a[i]]++;
   }
 
