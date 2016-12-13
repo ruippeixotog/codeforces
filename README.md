@@ -57,5 +57,6 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Arpa’s hard exam and Mehrdad’s naive cheat (`742A`)
 * ✓ B. Arpa’s obvious problem and Mehrdad’s terrible solution (`742B`)
 * ✓ C. Arpa's loud Owf and Mehrdad's evil plan (`742C`)
+* ✓ D. Arpa's weak amphitheater and Mehrdad's valuable Hoses (`742D`)
 
 [1]: http://codeforces.com
