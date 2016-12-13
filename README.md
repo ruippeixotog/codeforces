@@ -52,4 +52,9 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Tennis Championship (`735C`)
 * ✓ D. Taxes (`735D`)
 
+### Codeforces Round #383 (Div. 2)
+
+* ✓ A. Arpa’s hard exam and Mehrdad’s naive cheat (`742A`)
+* ✓ B. Arpa’s obvious problem and Mehrdad’s terrible solution (`742B`)
+
 [1]: http://codeforces.com
