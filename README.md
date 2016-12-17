@@ -59,6 +59,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Arpa's loud Owf and Mehrdad's evil plan (`742C`)
 * ✓ D. Arpa's weak amphitheater and Mehrdad's valuable Hoses (`742D`)
 
+### Codeforces Round #385 (Div. 2)
+
+* ✓ A. Hongcow Learns the Cyclic Shift (`745A`)
+* ✓ B. Hongcow Solves A Puzzle (`745B`)
+* ✓ C. Hongcow Builds A Nation (`745C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
