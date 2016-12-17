@@ -59,4 +59,8 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Arpa's loud Owf and Mehrdad's evil plan (`742C`)
 * ✓ D. Arpa's weak amphitheater and Mehrdad's valuable Hoses (`742D`)
 
+### Interactive Problem Training Contest
+
+* ✓ A. Guess the Number (`101021A`)
+
 [1]: http://codeforces.com
