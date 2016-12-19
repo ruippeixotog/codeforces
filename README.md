@@ -64,6 +64,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Hongcow Learns the Cyclic Shift (`745A`)
 * ✓ B. Hongcow Solves A Puzzle (`745B`)
 * ✓ C. Hongcow Builds A Nation (`745C`)
+* ✓ D. Hongcow's Game (`745D`)
 
 ### Interactive Problem Training Contest
 
