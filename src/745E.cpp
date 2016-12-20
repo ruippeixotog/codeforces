@@ -1,98 +1,66 @@
 #include <algorithm>
 #include <cstdio>
 #include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
 #define MAXN 16
 #define INF 1000000000
 
 using namespace std;
 
-typedef long long ll;
-typedef long double ld;
-
 int n;
 char c[MAXN]; int r[MAXN], b[MAXN];
 
-map<int, int> dpR[1 << MAXN];
-map<int, int> dpB[1 << MAXN];
+int dp[1 << MAXN][MAXN * MAXN / 2 + 1];
 
-void tryMin(int st, int rTokens, int bTokens, int cand) {
-  map<int, int>& dp = bTokens > 0 ? dpB[st] : dpR[st];
-  int tokens = bTokens > 0 ? bTokens : rTokens;
-
-  if(dp.count(tokens)) dp[tokens] = min(dp[tokens], cand);
-  else dp[tokens] = cand;
-}
-
-void calc(int st, int i, int curr, int target) {
+void calc(int st, int k, int curr, int target) {
   if(curr == target) {
-//    cerr << "expanding " << bitset<8>(st) << endl;
     int rCards = 0, bCards = 0;
-    for(int j = 0; j < n; j++) {
-      if(st & (1 << j)) (c[j] == 'R' ? rCards : bCards)++;
+    for(int i = 0; i < n; i++) {
+      if(st & (1 << i)) (c[i] == 'R' ? rCards : bCards)++;
     }
 
-//    for(auto entry: dpR[st]) {
-//      cerr << "- red " << entry.first << ": " << entry.second << endl;
-//    }
-//    for(auto entry: dpB[st]) {
-//      cerr << "- blue " << entry.first << ": " << entry.second << endl;
-//    }
+    for(int i = 0; i < n; i++) {
+      if(st & (1 << i)) continue;
+      int rBonus = min(rCards, r[i]), bBonus = min(bCards, b[i]);
 
-    for(int j = 0; j < n; j++) {
-      if(st & (1 << j)) continue;
-      int rCost = max(0, r[j] - rCards), bCost = max(0, b[j] - bCards);
+      for(int j = rBonus; j <= n * n / 2; j++) {
+        if(dp[st][j - rBonus] < 0) continue;
 
-      for(auto rTokens: dpR[st]) {
-        int buys = max(rCost - rTokens.first, bCost);
-        tryMin(st | (1 << j),
-               rTokens.first + buys - rCost,
-               buys - bCost,
-               rTokens.second + buys + 1);
-      }
-
-      for(auto bTokens: dpB[st]) {
-        int buys = max(rCost, bCost - bTokens.first);
-        tryMin(st | (1 << j),
-               buys - rCost,
-               bTokens.first + buys - bCost,
-               bTokens.second + buys + 1);
+        dp[st | (1 << i)][j] = max(
+          dp[st | (1 << i)][j],
+          dp[st][j - rBonus] + bBonus);
       }
     }
     return;
   }
 
-  if(i == n) return;
-  calc(st, i + 1, curr, target);
-  calc(st | (1 << i), i + 1, curr + 1, target);
+  if(k == n) return;
+  calc(st, k + 1, curr, target);
+  calc(st | (1 << k), k + 1, curr + 1, target);
 }
 
 int main() {
   scanf("%d\n", &n);
+
+  int rSum = 0, bSum = 0;
   for(int i = 0; i < n; i++) {
     scanf("%c %d %d\n", &c[i], &r[i], &b[i]);
+    rSum += r[i]; bSum += b[i];
   }
 
-  dpR[0][0] = 0;
+  memset(dp, -1, sizeof(dp));
+  dp[0][0] = 0;
   for(int i = 0; i < n; i++) {
     calc(0, 0, 0, i);
   }
 
   int best = INF;
-  for(auto entry: dpR[(1 << n) - 1]) {
-//    cerr << "red " << entry.first << ": " << entry.second << endl;
-    best = min(best, entry.second);
-  }
-  for(auto entry: dpB[(1 << n) - 1]) {
-//    cerr << "blue " << entry.first << ": " << entry.second << endl;
-    best = min(best, entry.second);
+  for(int i = 0; i <= n * n / 2; i++) {
+    if(dp[(1 << n) - 1][i] < 0) continue;
+
+    best = min(best, n + max(
+      max(0, rSum - i),
+      max(0, bSum - dp[(1 << n) - 1][i])));
   }
 
   printf("%d\n", best);
