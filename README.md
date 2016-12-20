@@ -65,6 +65,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. Hongcow Solves A Puzzle (`745B`)
 * ✓ C. Hongcow Builds A Nation (`745C`)
 * ✓ D. Hongcow's Game (`745D`)
+* ✓ E. Hongcow Buys a Deck of Cards (`745E`)
 
 ### Interactive Problem Training Contest
 
