@@ -67,6 +67,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ D. Hongcow's Game (`745D`)
 * ✓ E. Hongcow Buys a Deck of Cards (`745E`)
 
+### Codeforces Round #388 (Div. 2)
+
+* ✓ A. Bachgold Problem (`749A`)
+* ✓ B. Parallelogram is Back (`749B`)
+* ✓ C. Voting (`749C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
