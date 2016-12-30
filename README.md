@@ -74,6 +74,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Voting (`749C`)
 * ✓ D. Leaving Auction (`749D`)
 
+### Good Bye 2016
+
+* ✓ A. New Year and Hurry (`750A`)
+* ✓ B. New Year and North Pole (`750B`)
+* ✓ C. New Year and Rating (`750C`)
+* ✓ D. New Year and Fireworks (`750D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
