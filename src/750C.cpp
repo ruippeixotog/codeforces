@@ -1,21 +1,9 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
 #define MAXN 200000
 #define INF 1000000000
 
 using namespace std;
-
-typedef long long ll;
-typedef long double ld;
 
 int c[MAXN], d[MAXN];
 
@@ -44,5 +32,6 @@ int main() {
   if(!valid) printf("Impossible\n");
   else if(maxStart == INF) printf("Infinity\n");
   else printf("%d\n", curr);
+
   return 0;
 }

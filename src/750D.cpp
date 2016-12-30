@@ -1,25 +1,12 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
 #define MAXN 30
 #define MAXG 500
-#define INF 1000000000
 
 using namespace std;
 
-typedef long long ll;
-typedef long double ld;
-
-int di[] = {-1, -1, 0, 1, 1, 1, 0, -1};
-int dj[] = {0, 1, 1, 1, 0, -1, -1, -1};
+const int di[] = {-1, -1, 0, 1, 1, 1, 0, -1};
+const int dj[] = {0, 1, 1, 1, 0, -1, -1, -1};
 
 int n, t[MAXN];
 
@@ -36,9 +23,6 @@ void go(int i, int j, int dir, int depth) {
 
   for(int k = 0; k < t[depth]; k++) {
     i += di[dir]; j += dj[dir];
-
-    if(i < 0 || j < 0 || i >= MAXG || j >= MAXG)
-      cerr << i << " " << j << endl;
 
     if(!visited[i][j]) {
       visited[i][j] = true;
