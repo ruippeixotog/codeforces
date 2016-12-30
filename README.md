@@ -72,6 +72,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Bachgold Problem (`749A`)
 * ✓ B. Parallelogram is Back (`749B`)
 * ✓ C. Voting (`749C`)
+* ✓ D. Leaving Auction (`749D`)
 
 ### Interactive Problem Training Contest
 
