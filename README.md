@@ -80,6 +80,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. New Year and North Pole (`750B`)
 * ✓ C. New Year and Rating (`750C`)
 * ✓ D. New Year and Fireworks (`750D`)
+* ✓ E. New Year and Old Subsequence (`750E`)
 
 ### Interactive Problem Training Contest
 
