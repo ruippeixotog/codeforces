@@ -81,6 +81,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. New Year and Rating (`750C`)
 * ✓ D. New Year and Fireworks (`750D`)
 * ✓ E. New Year and Old Subsequence (`750E`)
+* ✓ F. New Year and Finding Roots (`750F`)
 
 ### Interactive Problem Training Contest
 
