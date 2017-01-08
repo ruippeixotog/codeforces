@@ -87,6 +87,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 
 * ✓ A. Lesha and array splitting (`754A`)
 * ✓ B. Ilya and tic-tac-toe game (`754B`)
+* ✓ C. Vladik and chat (`754C`)
 
 ### Interactive Problem Training Contest
 
