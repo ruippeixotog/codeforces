@@ -83,6 +83,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ E. New Year and Old Subsequence (`750E`)
 * ✓ F. New Year and Finding Roots (`750F`)
 
+### Codeforces Round #390 (Div. 2)
+
+* ✓ A. Lesha and array splitting (`754A`)
+* ✓ B. Ilya and tic-tac-toe game (`754B`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
