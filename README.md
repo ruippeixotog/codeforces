@@ -90,6 +90,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Vladik and chat (`754C`)
 * ✓ D. Fedor and coupons (`754D`)
 
+### Codeforces Round #393 (Div. 2) (8VC Venture Cup 2017 - Final Round Div. 2 Edition)
+
+* ✓ A. Petr and a calendar (`760A`)
+* ✓ B. Frodo and pillows (`760B`)
+* ✓ C. Pavel and barbecue (`760C`)
+* ✓ D. Travel Card (`760D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
