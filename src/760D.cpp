@@ -1,76 +1,62 @@
 #include <algorithm>
 #include <cstdio>
 #include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
 #define MAXN 100000
 #define INF 1000000000
 
 using namespace std;
 
-typedef long long ll;
-typedef long double ld;
-
 int t[MAXN];
 
-// int dp[MAXN + 1][1 + 90 + 1440];
-int currDp[1 + 90 + 1440];
+int dp[1 + 90 + 1440];
 
 int main() {
   int n; scanf("%d\n", &n);
   for(int i = 0; i < n; i++)
     scanf("%d\n", &t[i]);
 
-  memset(currDp, 0x3f, sizeof(currDp));
-  currDp[0] = 0;
+  memset(dp, 0x3f, sizeof(dp));
+  dp[0] = 0;
 
   int paid = 0, lastT = -INF;
-
   for(int i = 1; i <= n; i++) {
-    int nextDp[1 + 90 + 1440];
-    memset(nextDp, 0x3f, sizeof(nextDp));
+    int newDp[1 + 90 + 1440];
+    memset(newDp, 0x3f, sizeof(newDp));
 
     int timePassed = t[i - 1] - lastT;
+    int bestEmpty = dp[0];
 
-    int best = INF;
-    int bestEmpty = currDp[0];
-
-    for(int j = 0; j < 1440; j++) {
+    for(int j = 0; j < 90; j++) {
       if(j + timePassed < 90) {
-        best = min(best, currDp[1 + j]);
-        nextDp[1 + j + timePassed] = min(
-          nextDp[1 + j + timePassed],
-          currDp[1 + j]);
+        newDp[1 + j + timePassed] = dp[1 + j];
       } else {
-        bestEmpty = min(bestEmpty, currDp[1 + j]);
-      }
-
-      if(j + timePassed < 1440) {
-        best = min(best, currDp[1 + 90 + j]);
-        nextDp[1 + 90 + j + timePassed] = min(
-          nextDp[1 + 90 + j + timePassed],
-          currDp[1 + 90 + j]);
-      } else {
-        bestEmpty = min(bestEmpty, currDp[1 + 90 + j]);
+        bestEmpty = min(bestEmpty, dp[1 + j]);
       }
     }
 
-    nextDp[0] = bestEmpty + 20;
-    nextDp[1 + 0] = bestEmpty + 50;
-    nextDp[1 + 90 + 0] = bestEmpty + 120;
-    best = min(best, bestEmpty + 20);
+    for(int j = 0; j < 1440; j++) {
+      if(j + timePassed < 1440) {
+        newDp[1 + 90 + j + timePassed] = dp[1 + 90 + j];
+      } else {
+        bestEmpty = min(bestEmpty, dp[1 + 90 + j]);
+      }
+    }
+
+    newDp[0] = bestEmpty + 20;
+    newDp[1 + 0] = bestEmpty + 50;
+    newDp[1 + 90 + 0] = bestEmpty + 120;
+
+    int best = INF;
+    for(int j = 0; j < 1 + 90 + 1440; j++) {
+      best = min(best, newDp[j]);
+    }
 
     printf("%d\n", best - paid);
 
     paid = best;
     lastT = t[i - 1];
-    memcpy(currDp, nextDp, sizeof(currDp));
+    memcpy(dp, newDp, sizeof(dp));
   }
   return 0;
 }
