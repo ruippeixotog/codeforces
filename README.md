@@ -97,6 +97,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Pavel and barbecue (`760C`)
 * ✓ D. Travel Card (`760D`)
 
+### Codeforces Round #409 (rated, Div. 2, based on VK Cup 2017 Round 2)
+
+* ✓ A. Vicious Keyboard (`801A`)
+* ✓ B. Valued Keys (`801B`)
+* ✗ C. Voltage Keepsake (`801C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
