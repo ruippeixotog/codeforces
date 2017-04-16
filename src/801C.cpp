@@ -1,68 +1,36 @@
 #include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
+#include <tuple>
 
 #define MAXN 100000
-#define INF 1000000000
 
 using namespace std;
 
 typedef long long ll;
 typedef long double ld;
 
-tuple<ld, ll, ll> devices[MAXN];
-
-//ld epsilon = 1e-10;
-//
-//bool gte(ld a, ld b) {
-//  return (a + epsilon) >= b;
-//}
+tuple<ld, ll, ll> dev[MAXN];
 
 int main() {
   int n, p; scanf("%d %d\n", &n, &p);
   for(int i = 0; i < n; i++) {
     int a, b; scanf("%d %d\n", &a, &b);
-    devices[i] = make_tuple(b / (ld) a, (ll) a, (ll) b);
+    dev[i] = make_tuple(b / (ld) a, a, b);
   }
-  sort(devices, devices + n);
+  sort(dev, dev + n);
 
   int i = 0;
-  bool infinite = false;
-  while(true) {
-    if(i == n - 1) {
-      //      cerr << "last" << endl;
-      if(p >= get<1>(devices[i])) {
-        infinite = true;
-      } else {
-        get<1>(devices[i]) -= p;
-      }
-      // pLeft -= provided;
-      break;
-    } else {
-      ld needed = get<1>(devices[i]) - get<2>(devices[i]) / get<0>(devices[i + 1]);
-      if(needed > p) {
-//        cerr << "needed too much" << endl;
-        get<1>(devices[i]) -= p;
-        // pLeft = 0.0;
-        break;
-      } else {
-//        cerr << "provide" << endl;
-        get<1>(devices[i + 1]) += get<1>(devices[i]); // - needed;
-        get<2>(devices[i + 1]) += get<2>(devices[i]);
-        // pLeft -= needed;
-        i++;
-      }
-    }
+  for(; i < n - 1; i++) {
+    ld needed = get<1>(dev[i]) - get<2>(dev[i]) / get<0>(dev[i + 1]);
+    if(needed > p) break;
+
+    get<1>(dev[i + 1]) += get<1>(dev[i]);
+    get<2>(dev[i + 1]) += get<2>(dev[i]);
   }
 
-  if(infinite) printf("-1\n");
-  else printf("%.9f\n", (double) (get<2>(devices[i]) / (ld) get<1>(devices[i])));
+  ld res = p >= get<1>(dev[i]) ? -1.0 :
+           get<2>(dev[i]) / (ld) (get<1>(dev[i]) - p);
+
+  printf("%.9f\n", (double) res);
   return 0;
 }
