@@ -46,8 +46,8 @@ int main() {
       // pLeft -= provided;
       break;
     } else {
-      ld needed = get<1>(devices[i]) - get<1>(devices[i + 1]) / (ld) get<2>(devices[i + 1]);
-      if(needed >= p) {
+      ld needed = get<1>(devices[i]) - get<2>(devices[i]) / get<0>(devices[i + 1]);
+      if(needed > p) {
 //        cerr << "needed too much" << endl;
         get<1>(devices[i]) -= p;
         // pLeft = 0.0;
