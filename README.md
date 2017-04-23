@@ -97,6 +97,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Pavel and barbecue (`760C`)
 * ✓ D. Travel Card (`760D`)
 
+### Tinkoff Challenge - Elimination Round
+
+* ✓ A. Oleg and shares (`793A`)
+* ✓ B. Igor and his way to work (`793B`)
+* ✓ C. Mice problem (`793C`)
+* ✗ D. Presents in Bankopolis (`793D`)
+
 ### Codeforces Round #409 (rated, Div. 2, based on VK Cup 2017 Round 2)
 
 * ✓ A. Vicious Keyboard (`801A`)
