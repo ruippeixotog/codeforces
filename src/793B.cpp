@@ -1,44 +1,22 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
 #define MAXN 1000
 #define MAXM 1000
-#define INF 0x3f3f3f3f
-
-using namespace std;
-
-typedef long long ll;
-typedef long double ld;
 
 int n, m;
 char grid[MAXN][MAXM];
 
-bool search2(int i0, int j0, int di, int dj) {
+bool search(int i0, int j0, int di, int dj, int h) {
   for(int i = i0 + di, j = j0 + dj;
       i >= 0 && i < n && j >= 0 && j < m && grid[i][j] != '*';
       i += di, j += dj) {
 
     if(grid[i][j] == ':' || grid[i][j] == 'T') return true;
-  }
-  return false;
-}
-
-bool search1(int i0, int j0, int di, int dj) {
-  for(int i = i0 + di, j = j0 + dj;
-      i >= 0 && i < n && j >= 0 && j < m && grid[i][j] != '*';
-      i += di, j += dj) {
-
-    if(grid[i][j] == ':' || grid[i][j] == 'T' ||
-      search2(i, j, dj, di) || search2(i, j, -dj, -di))
-      return true;
+    if(h > 0) {
+      if(search(i, j, dj, di, h - 1) || search(i, j, -dj, -di, h - 1)) {
+        return true;
+      }
+    }
   }
   return false;
 }
@@ -60,15 +38,8 @@ int main() {
   for(int i = ti - 1; i >= 0 && grid[i][tj] == '.'; i--) grid[i][tj] = ':';
   for(int i = ti + 1; i < n && grid[i][tj] == '.'; i++) grid[i][tj] = ':';
 
-//  for(int i = 0; i < n; i++) {
-//    for(int j = 0; j < m; j++) {
-//      printf("%c", grid[i][j]);
-//    }
-//    printf("\n");
-//  }
-
-  bool res = search1(si, sj, 1, 0) || search1(si, sj, -1, 0) ||
-    search1(si, sj, 0, 1) || search1(si, sj, 0, -1);
+  bool res = search(si, sj, 1, 0, 1) || search(si, sj, -1, 0, 1) ||
+    search(si, sj, 0, 1, 1) || search(si, sj, 0, -1, 1);
 
   printf("%s\n", res ? "YES" : "NO");
   return 0;
