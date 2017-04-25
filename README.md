@@ -109,6 +109,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Vicious Keyboard (`801A`)
 * ✓ B. Valued Keys (`801B`)
 * ✓ C. Voltage Keepsake (`801C`)
+* ✓ D. Volatile Kite (`801D`)
 
 ### Interactive Problem Training Contest
 
