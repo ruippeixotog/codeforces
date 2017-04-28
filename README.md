@@ -103,6 +103,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. Igor and his way to work (`793B`)
 * ✓ C. Mice problem (`793C`)
 * ✓ D. Presents in Bankopolis (`793D`)
+* ✓ E. Problem of offices (`793E`)
 
 ### Codeforces Round #409 (rated, Div. 2, based on VK Cup 2017 Round 2)
 
