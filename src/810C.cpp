@@ -1,22 +1,12 @@
 #include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
 #define MAXN 300000
-#define INF 0x3f3f3f3f
 #define MOD 1000000007
 
 using namespace std;
 
 typedef long long ll;
-typedef long double ld;
 
 inline ll madd(ll a, ll b) { return (a + b) % MOD; }
 inline ll mmul(ll a, ll b) { return (a * b) % MOD; }
@@ -41,14 +31,11 @@ int main() {
 
   ll mult = dist % MOD, sum = 0;
   for(int i = 0; i < n / 2; i++) {
-    cerr << "dist: " << dist << endl;
-
     sum = madd(sum, mmul(mult, mpow(2, i)));
     if(i < n - i - 2) {
       sum = madd(sum, mmul(mult, mpow(2, n - i - 2)));
     }
-    dist -= (x[i + 1] - x[i]);
-    dist -= (x[n - i - 1] - x[n - i - 2]);
+    dist -= (x[i + 1] - x[i]) + (x[n - i - 1] - x[n - i - 2]);
     mult = madd(mult, dist);
   }
   printf("%d\n", (int) sum);

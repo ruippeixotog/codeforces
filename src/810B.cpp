@@ -1,22 +1,12 @@
 #include <algorithm>
-#include <functional>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
+#include <functional>
 
 #define MAXN 100000
-#define INF 0x3f3f3f3f
 
 using namespace std;
 
 typedef long long ll;
-typedef long double ld;
 
 int k[MAXN], l[MAXN];
 
