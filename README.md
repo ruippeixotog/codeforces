@@ -112,6 +112,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Voltage Keepsake (`801C`)
 * ✓ D. Volatile Kite (`801D`)
 
+### Codeforces Round #415 (Div. 2)
+
+* ✓ A. Straight <<A>> (`810A`)
+* ✓ B. Summer sell-off (`810B`)
+* ✓ C. Do you want a date? (`810C`)
+* ✗ D. Glad to see you! (`810D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
