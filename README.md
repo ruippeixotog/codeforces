@@ -119,6 +119,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Do you want a date? (`810C`)
 * ✓ D. Glad to see you! (`810D`)
 
+### Codeforces Round #424 (Div. 2, rated, based on VK Cup Finals)
+
+* ✓ A. Unimodal Array (`831A`)
+* ✓ B. Keyboard Layouts (`831B`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
