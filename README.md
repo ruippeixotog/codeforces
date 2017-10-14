@@ -124,6 +124,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Unimodal Array (`831A`)
 * ✓ B. Keyboard Layouts (`831B`)
 
+### Codeforces Round #439 (Div. 2)
+
+* ✓ A. The Artful Expedient (`869A`)
+* ✓ B. The Eternal Immortality (`869B`)
+* ✓ C. The Intriguing Obsession (`869C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
