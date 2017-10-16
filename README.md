@@ -129,6 +129,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. The Artful Expedient (`869A`)
 * ✓ B. The Eternal Immortality (`869B`)
 * ✓ C. The Intriguing Obsession (`869C`)
+* ✓ E. The Untended Antiquity (`869E`)
 
 ### Interactive Problem Training Contest
 
