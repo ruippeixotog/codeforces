@@ -112,6 +112,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Voltage Keepsake (`801C`)
 * ✓ D. Volatile Kite (`801D`)
 
+### Codeforces Round #412 (rated, Div. 2, based on VK Cup 2017 Round 3)
+
+* ✓ A. Is it rated? (`807A`)
+* ✓ B. T-Shirt Hunt (`807B`)
+
 ### Codeforces Round #415 (Div. 2)
 
 * ✓ A. Straight \<\<A\>\> (`810A`)
