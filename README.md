@@ -117,6 +117,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Is it rated? (`807A`)
 * ✓ B. T-Shirt Hunt (`807B`)
 * ✓ C. Success Rate (`807C`)
+* ✓ D. Dynamic Problem Scoring (`807D`)
 
 ### Codeforces Round #415 (Div. 2)
 
