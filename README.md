@@ -118,6 +118,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. T-Shirt Hunt (`807B`)
 * ✓ C. Success Rate (`807C`)
 * ✓ D. Dynamic Problem Scoring (`807D`)
+* ✓ E. Prairie Partition (`807E`)
 
 ### Codeforces Round #415 (Div. 2)
 
