@@ -143,6 +143,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 
 * ✓ A. Search for Pretty Integers (`872A`)
 * ✓ B. Maximum of Maximums of Minimums (`872B`)
+* ✓ C. Maximum splitting (`872C`)
 
 ### Interactive Problem Training Contest
 
