@@ -139,6 +139,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. The Intriguing Obsession (`869C`)
 * ✓ E. The Untended Antiquity (`869E`)
 
+### Codeforces Round #440 (Div. 2, based on Technocup 2018 Elimination Round 2)
+
+* ✓ A. Search for Pretty Integers (`872A`)
+* ✓ B. Maximum of Maximums of Minimums (`872B`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
