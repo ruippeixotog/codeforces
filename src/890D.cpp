@@ -59,8 +59,15 @@ bool build2(int i, string& lettersToCheck, int j0) {
         if(tryJoin(letterOwner, i, lettersToCheck[j])) {
 //          cerr << "joined as " << strs[letterOwner] << endl;
 
-          for(int k = 0; k <= j; k++) {
-            letters[lettersToCheck[k] - 'a'] = letterOwner;
+          for(int k = 0; k < strs[i].size(); k++) {
+            bool found = false;
+            for(int k2 = j + 1; k2 < lettersToCheck.size(); k2++) {
+              if(strs[i][k] == lettersToCheck[k2]) {
+                found = true;
+                break;
+              }
+            }
+            if(!found) letters[strs[i][k] - 'a'] = letterOwner;
           }
           if(!build2(letterOwner, lettersToCheck, j + 1)) {
             return false;

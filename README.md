@@ -151,7 +151,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. ACM (`890A`)
 * ✓ B. Vlad and Cafes (`890B`)
 * ✓ C. Petya and Catacombs (`890C`)
-* ✗ D. Restoration of string (`890D`)
+* ✓ D. Restoration of string (`890D`)
 
 ### Interactive Problem Training Contest
 
