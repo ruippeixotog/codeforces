@@ -146,6 +146,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Maximum splitting (`872C`)
 * ✓ E. Points, Lines and Ready-made Titles (`872E`)
 
+### Codeforces Round #445 (Div. 2, based on Technocup 2018 Elimination Round 3)
+
+* ✓ A. ACM (`890A`)
+* ✓ B. Vlad and Cafes (`890B`)
+* ✓ C. Petya and Catacombs (`890C`)
+* ✗ D. Restoration of string (`890D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
