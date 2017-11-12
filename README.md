@@ -144,6 +144,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Search for Pretty Integers (`872A`)
 * ✓ B. Maximum of Maximums of Minimums (`872B`)
 * ✓ C. Maximum splitting (`872C`)
+* ✓ E. Points, Lines and Ready-made Titles (`872E`)
 
 ### Interactive Problem Training Contest
 
