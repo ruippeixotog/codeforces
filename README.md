@@ -146,6 +146,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Maximum splitting (`872C`)
 * ✓ E. Points, Lines and Ready-made Titles (`872E`)
 
+### Educational Codeforces Round 31
+
+* ✓ A. Book Reading (`884A`)
+* ✓ B. Japanese Crosswords Strike Back (`884B`)
+* ✓ C. Bertown Subway (`884C`)
+
 ### Codeforces Round #445 (Div. 2, based on Technocup 2018 Elimination Round 3)
 
 * ✓ A. ACM (`890A`)
