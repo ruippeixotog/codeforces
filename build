@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+CC_FLAGS="-std=c++11 -Wall -O2 -lm"
+CC=g++
+
+TARGET=$1
+SOURCE="src/${TARGET%?}/${TARGET: -1}.cpp"
+
+if [[ ! -f $SOURCE ]]; then
+  echo "File not found: $SOURCE"
+  exit 1
+elif [[ ! $SOURCE -nt $TARGET ]]; then
+  echo "'$TARGET' is up to date."
+else
+  $CC $CC_FLAGS -o $TARGET $SOURCE
+fi

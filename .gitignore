@@ -1,11 +1,7 @@
-*
-!/**/
-!*.*
-!Makefile
+/[0-9]*
 
 *.in
 *.out
-*.exe
 
 .idea
 CMakeLists.txt

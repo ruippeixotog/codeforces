@@ -6,11 +6,11 @@ This repository contains my solutions to [Codeforces][1] problems. These solutio
 
 You can compile all the problems by issuing the following command:
 
-    $ make
+    $ ./build
 
 If you want to compile only a specific problem, issue the following command, replacing `<problem_id>` with the section and identifier of the problem you want to compile (see section "Problems Solved" for the list of possible identifiers):
 
-    $ make <problem_id>
+    $ ./build <problem_id>
 
 Running a compiled problem is just a matter of executing a command similar to the next one, replacing `<problem_id>` with the identifier of the desired problem:
 
