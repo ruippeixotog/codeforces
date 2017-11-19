@@ -159,6 +159,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Petya and Catacombs (`890C`)
 * ✓ D. Restoration of string (`890D`)
 
+### Codeforces Round #447 (Div. 2)
+
+* ✓ A. QAQ (`894A`)
+* ✓ C. Marco and GCD Sequence (`894C`)
+* ✗ D. Ralph And His Tour in Binary Country (`894D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
