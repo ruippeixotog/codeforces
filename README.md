@@ -163,7 +163,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 
 * ✓ A. QAQ (`894A`)
 * ✓ C. Marco and GCD Sequence (`894C`)
-* ✗ D. Ralph And His Tour in Binary Country (`894D`)
+* ✓ D. Ralph And His Tour in Binary Country (`894D`)
 
 ### Interactive Problem Training Contest
 

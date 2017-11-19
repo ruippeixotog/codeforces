@@ -1,71 +1,65 @@
 #include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
 #include <vector>
 
 #define MAXN 1000000
-#define INF 0x3f3f3f3f
 
 using namespace std;
 
 typedef long long ll;
-typedef long double ld;
 
 int n, L[MAXN];
 
-map<int, int> dist[MAXN];
+vector<ll> dist[MAXN], sumDist[MAXN];
 
 inline int parent(int k) { return (k - 1) / 2; }
 inline int left(int k) { return k * 2 + 1; }
 inline int right(int k) { return k * 2 + 2; }
-inline int getLen(int to) { return to < n ? L[to - 1] : 0; }
 
 void calcDist(int k) {
-  dist[k][0] = 1;
+  dist[k].push_back(0);
 
+  vector<ll> l, r;
   if(left(k) < n) {
     calcDist(left(k));
-    for(auto it : dist[left(k)]) {
-      dist[k][getLen(left(k)) + it.first] += it.second;
-    }
+    copy(dist[left(k)].begin(), dist[left(k)].end(), back_inserter(l));
+    for (ll &li : l) li += L[left(k) - 1];
   }
   if(right(k) < n) {
     calcDist(right(k));
-    for(auto it : dist[right(k)]) {
-      dist[k][getLen(right(k)) + it.first] += it.second;
-    }
+    copy(dist[right(k)].begin(), dist[right(k)].end(), back_inserter(r));
+    for (ll &ri : r) ri += L[right(k) - 1];
+  }
+  merge(l.begin(), l.end(), r.begin(), r.end(), back_inserter(dist[k]));
+
+  for(int i = 0; i < dist[k].size(); i++) {
+    sumDist[k].push_back(dist[k][i] + (i == 0 ? 0 : sumDist[k][i - 1]));
   }
 }
 
-ll querySibling(int a, int h) {
+ll queryChildren(int a, int h) {
   if(a >= n || h <= 0) return 0;
-  ll happiness = 0;
-  for(auto it : dist[a]) {
-    if(it.first >= h) break;
-    happiness += it.second * (ll) (h - it.first);
-  }
-  return happiness;
+
+  auto it = lower_bound(dist[a].begin(), dist[a].end(), h);
+  if(it == dist[a].end() || *it > h) it--;
+  int idx = (int) (it - dist[a].begin());
+
+  return h * (ll) (idx + 1) - sumDist[a][idx];
 }
 
 ll queryParent(int a, int h, int child) {
   if(a == child || h <= 0) return 0;
 
   ll happiness = child == left(a) ?
-                 h + querySibling(right(a), h - getLen(right(a))) :
-                 h + querySibling(left(a), h - getLen(left(a)));
+                 h + queryChildren(right(a), h - L[right(a) - 1]) :
+                 h + queryChildren(left(a), h - L[left(a) - 1]);
 
-  happiness += queryParent(parent(a), h - getLen(a), a);
+  happiness += queryParent(parent(a), h - L[a - 1], a);
   return happiness;
 }
 
 ll query(int a, int h) {
-  return querySibling(a, h) + queryParent(parent(a), h - getLen(a), a);
+  return queryChildren(a, h) + queryParent(parent(a), h - L[a - 1], a);
 }
 
 int main() {
@@ -74,16 +68,9 @@ int main() {
     scanf("%d", &L[i]);
 
   calcDist(0);
-//  for(int i = 0; i < n; i++) {
-//    for(int j = 0; j < 21; j++) {
-//      cerr << dist[i][j] << " ";
-//    }
-//    cerr << endl;
-//  }
 
   for(int i = 0; i < m; i++) {
     int a, h; scanf("%d %d\n", &a, &h);
-//    cerr << "query: " << a << " " << h << endl;
     printf("%lld\n", query(a - 1, h));
   }
   return 0;
