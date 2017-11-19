@@ -1,21 +1,8 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
 #include <iostream>
-#include <map>
-#include <queue>
-#include <set>
 #include <string>
-#include <utility>
-#include <vector>
-
-#define MAXN 200000
-#define INF 0x3f3f3f3f
 
 using namespace std;
-
-typedef long long ll;
-typedef long double ld;
 
 int main() {
   string str; cin >> str;
@@ -27,7 +14,7 @@ int main() {
       if(str[j] != 'A') continue;
       for(int k = j + 1; k < str.size(); k++) {
         if(str[k] != 'Q') continue;
-        cnt += 1;
+        cnt++;
       }
     }
   }
