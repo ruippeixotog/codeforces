@@ -8,7 +8,6 @@
 #include <string>
 #include <utility>
 #include <vector>
-#include <cassert>
 
 #define MAXN 1000000
 #define INF 0x3f3f3f3f
@@ -22,69 +21,51 @@ int n, L[MAXN];
 
 map<int, int> dist[MAXN];
 
+inline int parent(int k) { return (k - 1) / 2; }
+inline int left(int k) { return k * 2 + 1; }
+inline int right(int k) { return k * 2 + 2; }
+inline int getLen(int to) { return to < n ? L[to - 1] : 0; }
+
 void calcDist(int k) {
   dist[k][0] = 1;
-//  cerr << "at: " << k << endl;
 
-  int left = k * 2 + 1, right = left + 1;
-//  cerr << "left: " << left << ", right = " << right << endl;
-
-  if(left < n) {
-    calcDist(left);
-    for(auto it : dist[left]) {
-      dist[k][L[left - 1] + it.first] += it.second;
-//      fprintf(stderr, "dist[%d][%d] += %d\n", k, L[left - 1] + it.first, it.second);
+  if(left(k) < n) {
+    calcDist(left(k));
+    for(auto it : dist[left(k)]) {
+      dist[k][getLen(left(k)) + it.first] += it.second;
     }
-
-//    for(int i = 0; dist[left][i] > 0; i++) {
-//      dist[k][i + 1] += dist[left][i];
-//    }
   }
-  if(right < n) {
-    calcDist(right);
-    for(auto it : dist[right]) {
-      dist[k][L[right - 1] + it.first] += it.second;
-//      fprintf(stderr, "dist[%d][%d] += %d\n", k, L[right - 1] + it.first, it.second);
+  if(right(k) < n) {
+    calcDist(right(k));
+    for(auto it : dist[right(k)]) {
+      dist[k][getLen(right(k)) + it.first] += it.second;
     }
-
-//    for(int i = 0; dist[right][i] > 0; i++) {
-//      dist[k][i + 1] += dist[right][i];
-//    }
   }
 }
 
-int query(int a, int h, int prev) {
-  if(h <= 0) return 0;
-  cerr << "q: " << a << " " << h << " " << prev << endl;
-
-  int happiness = 0;
-  if(prev == -1) {
-    for(auto it : dist[a]) {
-      if(it.first >= h) break;
-      happiness += it.second * (h - it.first);
-    }
-  } else if(prev == a * 2 + 1) {
-    happiness += h + query(a * 2 + 2, h - L[a * 2 + 2 - 1], -1);
-  } else {
-    happiness += h + query(a * 2 + 1, h - L[a * 2 + 1 - 1], -1);
-  }
-
-//  for(auto it : dist[a]) {
-//    if(it.first >= h) break;
-//
-//    if(prev == -1 || it.first < L[prev - 1]) {
-//      happiness += it.second * (h - it.first);
-//    } else {
-//      happiness += (it.second - dist[prev][it.first - L[prev - 1]]) * (h - it.first);
-////      fprintf(stderr, "dist[%d][%d] - dist[%d][%d]\n", a, i, prev, i - L[a - 1]);
-//    }
-//  }
-
-  int parent = (a - 1) / 2;
-  if(parent != a) {
-    happiness += query(parent, h - L[a - 1], a);
+ll querySibling(int a, int h) {
+  if(a >= n || h <= 0) return 0;
+  ll happiness = 0;
+  for(auto it : dist[a]) {
+    if(it.first >= h) break;
+    happiness += it.second * (ll) (h - it.first);
   }
   return happiness;
+}
+
+ll queryParent(int a, int h, int child) {
+  if(a == child || h <= 0) return 0;
+
+  ll happiness = child == left(a) ?
+                 h + querySibling(right(a), h - getLen(right(a))) :
+                 h + querySibling(left(a), h - getLen(left(a)));
+
+  happiness += queryParent(parent(a), h - getLen(a), a);
+  return happiness;
+}
+
+ll query(int a, int h) {
+  return querySibling(a, h) + queryParent(parent(a), h - getLen(a), a);
 }
 
 int main() {
@@ -103,7 +84,7 @@ int main() {
   for(int i = 0; i < m; i++) {
     int a, h; scanf("%d %d\n", &a, &h);
 //    cerr << "query: " << a << " " << h << endl;
-    printf("%d\n", query(a - 1, h, -1));
+    printf("%lld\n", query(a - 1, h));
   }
   return 0;
 }
