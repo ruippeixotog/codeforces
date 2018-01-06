@@ -165,6 +165,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Marco and GCD Sequence (`894C`)
 * ✓ D. Ralph And His Tour in Binary Country (`894D`)
 
+### Good Bye 2017
+
+* ✓ A. New Year and Counting Cards (`908A`)
+* ✓ B. New Year and Buggy Bot (`908B`)
+* ✓ C. New Year and Curling (`908C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
