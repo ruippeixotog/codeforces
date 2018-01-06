@@ -170,6 +170,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. New Year and Counting Cards (`908A`)
 * ✓ B. New Year and Buggy Bot (`908B`)
 * ✓ C. New Year and Curling (`908C`)
+* ✓ D. New Year and Arbitrary Arrangement (`908D`)
 
 ### Interactive Problem Training Contest
 
