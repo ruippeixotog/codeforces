@@ -172,6 +172,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. New Year and Curling (`908C`)
 * ✓ D. New Year and Arbitrary Arrangement (`908D`)
 
+### Educational Codeforces Round 36 (Rated for Div. 2)
+
+* ✓ A. Garden (`915A`)
+* ✓ B. Browser (`915B`)
+* ✓ C. Permute Digits (`915C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
