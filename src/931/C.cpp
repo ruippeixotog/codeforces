@@ -1,21 +1,11 @@
 #include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
 #include <vector>
 
-#define MAXN 200000
+#define MAXN 100000
 #define INF 0x3f3f3f3f
 
 using namespace std;
-
-typedef long long ll;
-typedef long double ld;
 
 int x[MAXN];
 
@@ -44,15 +34,11 @@ int main() {
     for(int i = 0; i < n; i++) {
       hist[x[i] - low]++;
     }
-//    cerr << hist[0] << " " << hist[1] << " " << hist[2] << endl;
-
     for(; hist[0] > hist[2]; hist[0]--) {
-      sol.push_back(low);
-      minEq++;
+      sol.push_back(low); minEq++;
     }
     for(; hist[2] > hist[0]; hist[2]--) {
-      sol.push_back(low + 2);
-      minEq++;
+      sol.push_back(low + 2); minEq++;
     }
     if(hist[1] % 2 == 1) {
       sol.push_back(low + 1);
@@ -61,8 +47,7 @@ int main() {
     if(hist[1] > hist[0] * 2) {
       minEq += hist[0] * 2;
       for(int i = 0; i < hist[0] + hist[1] / 2; i++) {
-        sol.push_back(low);
-        sol.push_back(low + 2);
+        sol.push_back(low); sol.push_back(low + 2);
       }
     } else {
       minEq += hist[1];

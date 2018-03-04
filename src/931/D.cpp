@@ -1,78 +1,47 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
 #include <queue>
-#include <set>
-#include <string>
-#include <utility>
 #include <vector>
 
 #define MAXN 100000
-#define INF 0x3f3f3f3f
 
 using namespace std;
 
-typedef long long ll;
-typedef long double ld;
-
 vector<int> children[MAXN];
+
 int alias[MAXN];
+queue<bool> fruits[MAXN];
 
-//bool terminated[MAXN];
-queue<int> fruits[MAXN];
-
-void simplify(int k) {
-//  for(int adj : children[k]) {
-//    simplify(adj);
-//  }
-  if(children[k].size() == 1) {
-    int adj = children[k][0];
-    children[k].pop_back();
-    alias[adj] = k;
-
-    for(int dadj : children[adj]) {
-      children[k].push_back(dadj);
-    }
-    // alias[adj] = k;
-//    while(!fruits[adj].empty()) {
-//      fruits[k].push(fruits[adj].front());
-//      fruits[adj].pop();
-//    }
-
-    simplify(k);
-  } else {
-    for(int adj : children[k]) {
-      simplify(adj);
-    }
+void compress(int k) {
+  alias[k] = k;
+  if(children[k].size() != 1) {
+    for(int adj : children[k]) compress(adj);
+    return;
   }
+  int adj = children[k][0];
+  children[k].pop_back();
+  alias[adj] = k;
+
+  for(int dadj : children[adj]) {
+    children[k].push_back(dadj);
+  }
+  compress(k);
 }
 
-void drop(int k) {
-  // if(terminated[k]) return;
-//  cerr << k << " not terminated " << endl;
-  // terminated[k] = fruits[k].empty();
+int drop(int k) {
+  int v = fruits[k].front();
+  fruits[k].pop();
 
-  bool isActive = false;
-
-  int nextF = 0;
+  bool isActive = false; int tailV = 0;
   for(int adj : children[k]) {
-//    if(terminated[adj]) continue;
-//    terminated[k] = false;
-
     if(!fruits[adj].empty()) {
+      tailV += drop(adj);
       isActive = true;
-      nextF += fruits[adj].front();
-//      cerr << fruits[adj].front() << " dropped from " << adj << " to " << k << endl;
-      fruits[adj].pop();
-      drop(adj);
     }
   }
   if(isActive) {
-//    cerr << k << " filled with " << (nextF % 2) << endl;
-    fruits[k].push(nextF % 2);
+    fruits[k].push((bool) (tailV % 2));
   }
+  return v;
 }
 
 int main() {
@@ -82,22 +51,14 @@ int main() {
     children[--parent].push_back(i + 1);
   }
 
+  compress(0);
   for(int i = 0; i < n; i++)
-    alias[i] = i;
-  simplify(0);
-  //  cerr << "simplified" << endl;
+    fruits[alias[i]].push(true);
 
-  for(int i = 0; i < n; i++)
-    fruits[alias[i]].push(1);
-
-  int fruitsCollected = 0;
+  int collected = 0;
   while(!fruits[0].empty()) {
-//    cerr << "---" << endl;
-    fruitsCollected += fruits[0].front();
-//    cerr << fruits[0].front() << " collected" << endl;
-    fruits[0].pop();
-    drop(0);
+    collected += drop(0);
   }
-  printf("%d\n", fruitsCollected);
+  printf("%d\n", collected);
   return 0;
 }

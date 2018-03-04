@@ -1,21 +1,5 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
-
-#define MAXN 200000
-#define INF 0x3f3f3f3f
-
-using namespace std;
-
-typedef long long ll;
-typedef long double ld;
+#include <cstdlib>
 
 int asum(int n) {
   return n * (1 + n) / 2;
