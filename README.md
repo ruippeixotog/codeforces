@@ -178,6 +178,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. Browser (`915B`)
 * ✓ C. Permute Digits (`915C`)
 
+### Codeforces Round #468 (Div. 2, based on Technocup 2018 Final Round)
+
+* ✓ A. Friends Meeting (`931A`)
+* ✓ B. World Cup (`931B`)
+* ✓ C. Laboratory Work (`931C`)
+* ✓ D. Peculiar apple-tree (`931D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
