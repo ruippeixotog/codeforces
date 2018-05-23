@@ -185,6 +185,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Laboratory Work (`931C`)
 * ✓ D. Peculiar apple-tree (`931D`)
 
+### Educational Codeforces Round 43 (Rated for Div. 2)
+
+* ✓ A. Minimum Binary Number (`976A`)
+* ✓ B. Lara Croft and the New Game (`976B`)
+* ✓ C. Nested Segments (`976C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
