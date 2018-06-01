@@ -190,6 +190,8 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Minimum Binary Number (`976A`)
 * ✓ B. Lara Croft and the New Game (`976B`)
 * ✓ C. Nested Segments (`976C`)
+* ✓ D. Degree Set (`976D`)
+* ✓ E. Well played! (`976E`)
 
 ### Interactive Problem Training Contest
 
