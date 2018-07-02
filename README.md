@@ -193,6 +193,18 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ D. Degree Set (`976D`)
 * ✓ E. Well played! (`976E`)
 
+### Microsoft Q# Coding Contest - Summer 2018 - Warmup
+
+* ✓ A. Generate plus state or minus state (`1001A`)
+* ✓ B. Generate Bell state (`1001B`)
+* ✓ C. Generate GHZ state (`1001C`)
+* ✓ D. Distinguish plus state and minus state (`1001D`)
+* ✓ E. Distinguish Bell states (`1001E`)
+* ✓ F. Distinguish multi-qubit basis states (`1001F`)
+* ✓ G. Oracle for f(x) = k-th element of x (`1001G`)
+* ✓ H. Oracle for f(x) = parity of the number of 1s in x (`1001H`)
+* ✓ I. Deutsch-Jozsa algorithm (`1001I`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
