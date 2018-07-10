@@ -205,6 +205,20 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ H. Oracle for f(x) = parity of the number of 1s in x (`1001H`)
 * ✓ I. Deutsch-Jozsa algorithm (`1001I`)
 
+### Microsoft Q# Coding Contest - Summer 2018
+
+* ✓ A1. Generate superposition of all basis states (`1002A1`)
+* ✓ A2. Generate superposition of zero state and a basis state (`1002A2`)
+* ✓ A3. Generate superposition of two basis states (`1002A3`)
+* ✓ B1. Distinguish zero state and W state (`1002B1`)
+* ✓ B2. Distinguish GHZ state and W state (`1002B2`)
+* ✓ B3. Distinguish four 2-qubit states (`1002B3`)
+* ✓ B4. Distinguish four 2-qubit states - 2 (`1002B4`)
+* ✓ D1. Oracle for f(x) = b * x mod 2 (`1002D1`)
+* ✓ D2. Oracle for f(x) = b * x + (1 - b) * (1 - x) mod 2 (`1002D2`)
+* ✓ D3. Oracle for majority function (`1002D3`)
+* ✓ E1. Bernstein-Vazirani algorithm (`1002E1`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
