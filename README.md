@@ -210,14 +210,17 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A1. Generate superposition of all basis states (`1002A1`)
 * ✓ A2. Generate superposition of zero state and a basis state (`1002A2`)
 * ✓ A3. Generate superposition of two basis states (`1002A3`)
+* ✓ A4. Generate W state (`1002A4`)
 * ✓ B1. Distinguish zero state and W state (`1002B1`)
 * ✓ B2. Distinguish GHZ state and W state (`1002B2`)
 * ✓ B3. Distinguish four 2-qubit states (`1002B3`)
 * ✓ B4. Distinguish four 2-qubit states - 2 (`1002B4`)
+* ✓ C1. Distinguish zero state and plus state with minimum error (`1002C1`)
 * ✓ D1. Oracle for f(x) = b * x mod 2 (`1002D1`)
 * ✓ D2. Oracle for f(x) = b * x + (1 - b) * (1 - x) mod 2 (`1002D2`)
 * ✓ D3. Oracle for majority function (`1002D3`)
 * ✓ E1. Bernstein-Vazirani algorithm (`1002E1`)
+* ✓ E2. Another array reconstruction algorithm (`1002E2`)
 
 ### Interactive Problem Training Contest
 
