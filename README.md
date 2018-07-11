@@ -216,6 +216,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B3. Distinguish four 2-qubit states (`1002B3`)
 * ✓ B4. Distinguish four 2-qubit states - 2 (`1002B4`)
 * ✓ C1. Distinguish zero state and plus state with minimum error (`1002C1`)
+* ✓ C2. Distinguish zero state and plus state without errors (`1002C2`)
 * ✓ D1. Oracle for f(x) = b * x mod 2 (`1002D1`)
 * ✓ D2. Oracle for f(x) = b * x + (1 - b) * (1 - x) mod 2 (`1002D2`)
 * ✓ D3. Oracle for majority function (`1002D3`)
