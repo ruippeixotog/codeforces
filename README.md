@@ -223,6 +223,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ E1. Bernstein-Vazirani algorithm (`1002E1`)
 * ✓ E2. Another array reconstruction algorithm (`1002E2`)
 
+### Codeforces Round #497 (Div. 2)
+
+* ✓ A. Romaji (`1008A`)
+* ✓ B. Turn the Rectangles (`1008B`)
+* ✓ C. Reorder the Array (`1008C`)
+* ✗ E. Guess two numbers (`1008E`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
