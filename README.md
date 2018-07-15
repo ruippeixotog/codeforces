@@ -228,7 +228,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Romaji (`1008A`)
 * ✓ B. Turn the Rectangles (`1008B`)
 * ✓ C. Reorder the Array (`1008C`)
-* ✗ E. Guess two numbers (`1008E`)
+* ✓ E. Guess two numbers (`1008E`)
 
 ### Interactive Problem Training Contest
 
