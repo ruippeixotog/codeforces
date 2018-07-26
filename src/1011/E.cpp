@@ -1,13 +1,7 @@
 #include <cstdio>
-#include <vector>
 
 #define MAXK 100000
 
-using namespace std;
-
-bool aRev[MAXK];
-
-vector<int> factors;
 bool dp[MAXK];
 
 int gcd(int n1, int n2) {
@@ -16,34 +10,20 @@ int gcd(int n1, int n2) {
 
 int main() {
   int n, k; scanf("%d %d\n", &n, &k);
+
+  int aGcd = k;
   for(int i = 0; i < n; i++) {
     int ai; scanf("%d", &ai);
-    aRev[gcd(ai % k, k)] = true;
-  }
-
-  for(int i = 1; i < k; i++) {
-    if(!aRev[i]) continue;
-    factors.push_back(i);
-
-    for(int j = i + i; j < k; j += i) {
-      aRev[j] = false;
-    }
+    aGcd = gcd(aGcd, ai);
   }
 
   dp[0] = true;
   int cnt = 1;
-  for(int fact : factors) {
-    bool changed = true;
-    while(changed) {
-      changed = false;
-      for(int i = 0; i < k; i++) {
-        if(!dp[i]) continue;
-        if(!dp[(i + fact) % k]) {
-          dp[(i + fact) % k] = true;
-          cnt++;
-          changed = true;
-        }
-      }
+  for(int i = 0; i + aGcd < k; i++) {
+    if(!dp[i]) continue;
+    if(!dp[i + aGcd]) {
+      dp[i + aGcd] = true;
+      cnt++;
     }
   }
 
