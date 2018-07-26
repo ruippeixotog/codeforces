@@ -1,23 +1,11 @@
 #include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
-#define MAXN 100
-#define INF 0x3f3f3f3f
+#define MAXM 100
 
 using namespace std;
 
-typedef long long ll;
-typedef long double ld;
-
-int a[MAXN];
+int a[MAXM];
 
 int main() {
   int n, m; scanf("%d %d\n", &n, &m);
@@ -29,8 +17,6 @@ int main() {
   int lowT = 0, hiT = m / n;
   while(lowT < hiT) {
     int midT = (lowT + hiT + 1) / 2;
-//    cerr << lowT << " " << hiT << endl;
-//    cerr << midT << endl;
 
     int idx = 0;
     bool success = true;
@@ -46,7 +32,6 @@ int main() {
         break;
       }
     }
-
     if(success) lowT = midT;
     else hiT = midT - 1;
   }
