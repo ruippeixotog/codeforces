@@ -234,7 +234,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 
 * ✓ A. Stages (`1011A`)
 * ✓ B. Planning The Expedition (`1011B`)
-* ✗ C. Fly (`1011C`)
+* ✓ C. Fly (`1011C`)
 * ✓ D. Rocket (`1011D`)
 * ✗ E. Border (`1011E`)
 
