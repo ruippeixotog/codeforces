@@ -185,6 +185,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Laboratory Work (`931C`)
 * ✓ D. Peculiar apple-tree (`931D`)
 
+### Codeforces Round #470 (Div. 2, based on VK Cup 2018 Round 1)
+
+* ✓ A. Protect Sheep (`948A`)
+* ✓ C. Producing Snow (`948B`)
+
 ### Educational Codeforces Round 43 (Rated for Div. 2)
 
 * ✓ A. Minimum Binary Number (`976A`)
