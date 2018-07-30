@@ -188,7 +188,8 @@ The following is the list of the problems solved. Each problem identifier is spe
 ### Codeforces Round #470 (Div. 2, based on VK Cup 2018 Round 1)
 
 * ✓ A. Protect Sheep (`948A`)
-* ✓ C. Producing Snow (`948B`)
+* ✓ B. Primal Sport (`948B`)
+* ✓ C. Producing Snow (`948C`)
 
 ### Educational Codeforces Round 43 (Rated for Div. 2)
 
