@@ -244,6 +244,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ D. Rocket (`1011D`)
 * ✓ E. Border (`1011E`)
 
+### Codeforces Round #503 (by SIS, Div. 2)
+
+* ✓ A. New Building for SIS (`1020A`)
+* ✓ B. Badge (`1020B`)
+* ✓ C. Elections (`1020C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)

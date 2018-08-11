@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CC_FLAGS="-std=c++11 -Wall -O2 -lm"
+CC_FLAGS="-std=c++11 -Wall -O2 -lm  -Wl,-stack_size -Wl,0x10000000"
 CC=g++
 
 TARGET=$1
