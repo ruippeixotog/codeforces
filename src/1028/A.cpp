@@ -1,23 +1,9 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
 #define MAXN 115
-#define INF 0x3f3f3f3f
+#define MAXM 115
 
-using namespace std;
-
-typedef long long ll;
-typedef long double ld;
-
-char s[MAXN][MAXN];
+char s[MAXN][MAXM];
 
 int main() {
   int n, m; scanf("%d %d\n", &n, &m);
