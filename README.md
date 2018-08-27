@@ -250,6 +250,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. Badge (`1020B`)
 * ✓ C. Elections (`1020C`)
 
+### AIM Tech Round 5 (rated, Div. 1 + Div. 2)
+
+* ✓ A. Find Square (`1028A`)
+* ✓ B. Unnatural Conditions (`1028B`)
+* ✓ C. Rectangles (`1028C`)
+* ✓ D. Order book (`1028D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
