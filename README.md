@@ -249,6 +249,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. New Building for SIS (`1020A`)
 * ✓ B. Badge (`1020B`)
 * ✓ C. Elections (`1020C`)
+* ✓ D. The hat (`1020D`)
 
 ### AIM Tech Round 5 (rated, Div. 1 + Div. 2)
 
