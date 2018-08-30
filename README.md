@@ -190,6 +190,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Protect Sheep (`948A`)
 * ✓ B. Primal Sport (`948B`)
 * ✓ C. Producing Snow (`948C`)
+* ✓ D. Perfect Security (`948D`)
 
 ### Educational Codeforces Round 43 (Rated for Div. 2)
 
