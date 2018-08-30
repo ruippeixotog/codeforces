@@ -191,6 +191,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. Primal Sport (`948B`)
 * ✓ C. Producing Snow (`948C`)
 * ✓ D. Perfect Security (`948D`)
+* ✓ E. Picking Strings (`948E`)
 
 ### Educational Codeforces Round 43 (Rated for Div. 2)
 
