@@ -260,6 +260,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Rectangles (`1028C`)
 * ✓ D. Order book (`1028D`)
 
+### Manthan, Codefest 18 (rated, Div. 1 + Div. 2)
+
+* ✓ A. Packets (`1037A`)
+* ✓ B. Reach Median (`1037B`)
+* ✓ C. Equalize (`1037C`)
+* ✓ D. Valid BFS? (`1037D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
