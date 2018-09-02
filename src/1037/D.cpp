@@ -1,22 +1,12 @@
-#include <algorithm>
 #include <cstdio>
 #include <cstring>
-#include <iostream>
-#include <map>
 #include <queue>
 #include <set>
-#include <string>
-#include <utility>
 #include <vector>
-#include <unordered_set>
 
 #define MAXN 200000
-#define INF 0x3f3f3f3f
 
 using namespace std;
-
-typedef long long ll;
-typedef long double ld;
 
 vector<int> adjs[MAXN];
 int a[MAXN];
@@ -35,7 +25,7 @@ int main() {
     a[i]--;
   }
 
-  queue<unordered_set<int>> q;
+  queue<set<int>> q;
   q.push({0});
   memset(visited, false, sizeof(visited));
   visited[0] = true;
@@ -43,7 +33,7 @@ int main() {
   int aIdx = 0;
   bool failed = false;
   while(!q.empty()) {
-    unordered_set<int>& currSet = q.front();
+    set<int>& currSet = q.front();
     int currA = a[aIdx++];
 
     if(!currSet.count(currA)) {
@@ -54,7 +44,7 @@ int main() {
     if(currSet.empty()) {
       q.pop();
     }
-    unordered_set<int> newSet;
+    set<int> newSet;
     for(int adj : adjs[currA]) {
       if(visited[adj]) continue;
       visited[adj] = true;

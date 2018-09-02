@@ -1,21 +1,9 @@
 #include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
 #define MAXN 1000000
-#define INF 0x3f3f3f3f
 
 using namespace std;
-
-typedef long long ll;
-typedef long double ld;
 
 char a[MAXN + 1], b[MAXN + 1];
 
