@@ -266,6 +266,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. Reach Median (`1037B`)
 * ✓ C. Equalize (`1037C`)
 * ✓ D. Valid BFS? (`1037D`)
+* ✓ F. Maximum Reduction (`1037F`)
 
 ### Interactive Problem Training Contest
 
