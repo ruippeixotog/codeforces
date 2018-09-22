@@ -260,6 +260,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Rectangles (`1028C`)
 * ✓ D. Order book (`1028D`)
 
+### Codeforces Round #511 (Div. 1)
+
+* ✗ A. Enlarge GCD (`1034A`)
+* ✓ B. Little C Loves 3 II (`1034B`)
+
 ### Manthan, Codefest 18 (rated, Div. 1 + Div. 2)
 
 * ✓ A. Packets (`1037A`)
