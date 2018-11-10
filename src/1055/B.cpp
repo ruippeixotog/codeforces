@@ -1,20 +1,6 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
 
 #define MAXN 200000
-
-using namespace std;
-
-typedef long long ll;
-typedef long double ld;
 
 int a[MAXN];
 
@@ -23,13 +9,11 @@ int main() {
   for(int i = 0; i < n; i++)
     scanf("%d", &a[i]);
 
-  int groups = 0;
-  if(a[0] > l) groups++;
+  int groups = a[0] > l;
   for(int i = 1; i < n; i++) {
     if(a[i - 1] <= l && a[i] > l)
       groups++;
   }
-  cerr << "g: " << groups << endl;
 
   for(int i = 0; i < m; i++) {
     int ti; scanf("%d", &ti);
