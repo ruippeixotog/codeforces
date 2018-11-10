@@ -274,9 +274,15 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ E. Trips (`1037E`)
 * ✓ F. Maximum Reduction (`1037F`)
 
-Codeforces Round #512 (Div. 1, based on Technocup 2019 Elimination Round 1)
+### Codeforces Round #512 (Div. 1, based on Technocup 2019 Elimination Round 1)
 
 * ✓ A. Vasya and Triangle (`1053A`)
+
+### Mail.Ru Cup 2018 Round 2
+
+* ✓ A. Metro (`1055A`)
+* ✓ B. Alice and Hairdresser (`1055B`)
+* ✓ C. Lucky Days (`1055C`)
 
 ### Interactive Problem Training Contest
 
