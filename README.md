@@ -284,6 +284,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. Alice and Hairdresser (`1055B`)
 * ✓ C. Lucky Days (`1055C`)
 
+### Good Bye 2018
+
+* ✓ A. New Year and the Christmas Ornament (`1091A`)
+* ✓ B. New Year and the Treasure Geolocation (`1091B`)
+* ✓ C. New Year and the Sphere Transmission (`1091C`)
+* ✓ D. New Year and the Permutation Concatenation (`1091D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
