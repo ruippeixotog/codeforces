@@ -291,6 +291,16 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. New Year and the Sphere Transmission (`1091C`)
 * ✓ D. New Year and the Permutation Concatenation (`1091D`)
 
+### Microsoft Q# Coding Contest - Winter 2019
+
+* ✓ A1. Generate state |00⟩ + |01⟩ + |10⟩ (`1116A1`)
+* ✓ A2. Generate equal superposition of four basis states (`1116A2`)
+* ✓ C1. Alternating bits oracle (`1116C1`)
+* ✓ C2. "Is the bit string periodic?" oracle (`1116C2`)
+* ✗ C3. "Is the number of ones divisible by 3?" oracle (`1116C3`)
+* ✓ D1. Block diagonal matrix (`1116D1`)
+* ✗ D2. Pattern of increasing blocks (`1116D2`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
