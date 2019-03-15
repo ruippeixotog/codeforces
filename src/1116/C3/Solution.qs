@@ -2,35 +2,24 @@
   open Microsoft.Quantum.Primitive;
   open Microsoft.Quantum.Canon;
 
-  operation Rotate(x: Qubit[]) : Unit {
+  operation CountMod3 (x : Qubit[], sum: Qubit, carry: Qubit) : Unit {
     body (...) {
-      let N = Length(x);
-      using(anc = Qubit()) {
-        SWAP(x[0], anc);
-        for(i in 1..N-1) {
-          SWAP(x[i-1], x[i]);
-        }
-        SWAP(anc, x[N-1]);
+      for(xi in x) {
+        (ControlledOnBitString([true, false], X))([xi, carry], sum);
+        (ControlledOnBitString([true, false], X))([xi, sum], carry);      
       }
     }
     adjoint auto;
-    controlled auto;
-    controlled adjoint auto;
   }
 
   operation Solve (x : Qubit[], y : Qubit) : Unit {
     body (...) {
-      let N = Length(x);
-      using (ancs = Qubit[3]) {
-        X(ancs[0]);
-        for(i in 0..N-1) {
-          (Controlled Rotate)([x[i]], ancs);
-        }
-        CNOT(ancs[0], y);
-        for(i in 0..N-1) {
-          (Controlled Adjoint Rotate)([x[i]], ancs);
-        }
-        X(ancs[0]);
+      using (ancs = Qubit[2]) {
+        let sum = ancs[0];
+        let carry = ancs[1];
+        CountMod3(x, sum, carry);
+        (ControlledOnInt(0, X))([sum, carry], y);
+        (Adjoint CountMod3)(x, sum, carry);
       }
     }
     adjoint auto;
