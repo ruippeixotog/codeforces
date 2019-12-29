@@ -301,6 +301,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ D1. Block diagonal matrix (`1116D1`)
 * ✗ D2. Pattern of increasing blocks (`1116D2`)
 
+### Codeforces Round #584
+
+* ✓ A. Paint the Numbers (`1209A`)
+* ✓ B. Koala and Lights (`1209B`)
+* ✓ C. Paint the Digits (`1209C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
