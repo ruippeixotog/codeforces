@@ -307,6 +307,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B. Koala and Lights (`1209B`)
 * ✓ C. Paint the Digits (`1209C`)
 
+### Educational Codeforces Round 78
+
+* ✓ A. Shuffle Hashing (`1278A`)
+* ✓ B. A and B (`1278B`)
+* ✓ C. Berry Jam (`1278C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
