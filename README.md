@@ -312,6 +312,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Shuffle Hashing (`1278A`)
 * ✓ B. A and B (`1278B`)
 * ✓ C. Berry Jam (`1278C`)
+* ✓ D. Segment Tree (`1278D`)
 
 ### Interactive Problem Training Contest
 
