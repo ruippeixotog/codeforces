@@ -314,6 +314,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Berry Jam (`1278C`)
 * ✓ D. Segment Tree (`1278D`)
 
+### Educational Codeforces Round 82
+
+* ✓ A. Erasing Zeroes (`1303A`)
+* ✓ B. National Project (`1303B`)
+* ✓ C. Perfect Keyboard (`1303C`)
+* ✓ D. Fill The Bag (`1303D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
