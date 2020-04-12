@@ -1,30 +1,18 @@
-#include <algorithm>
 #include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <utility>
 #include <vector>
 
-#define MAXN 200000
-#define INF 0x3f3f3f3f
+#define MAXN 100000
 
 using namespace std;
 
-typedef long long ll;
-typedef long double ld;
-
 vector<int> adjs[MAXN];
 
-int level = 0;
+int maxDistinct = 0;
 bool oddDepths, evenDepths;
 
 void dfs(int k, int last, int depth) {
   if(last != -1) {
-    level++;
+    maxDistinct++;
   }
   bool hasLeaves = false;
   for(int adj : adjs[k]) {
@@ -38,7 +26,7 @@ void dfs(int k, int last, int depth) {
     }
   }
   if(hasLeaves) {
-    level++;
+    maxDistinct++;
   }
 }
 
@@ -46,7 +34,7 @@ int main() {
   int n; scanf("%d\n", &n);
   for(int i = 0; i < n - 1; i++) {
     int a, b; scanf("%d %d", &a, &b);
-    adjs[a].push_back(b);
+    adjs[--a].push_back(--b);
     adjs[b].push_back(a);
   }
 
@@ -56,10 +44,7 @@ int main() {
       break;
     }
   }
-
-  int minF = oddDepths & evenDepths ? 3 : 1;
-  int maxF = level;
-
-  printf("%d %d\n", minF, maxF);
+  int minDistinct = oddDepths & evenDepths ? 3 : 1;
+  printf("%d %d\n", minDistinct, maxDistinct);
   return 0;
 }
