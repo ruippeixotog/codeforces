@@ -327,6 +327,13 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ D. Fill The Bag (`1303D`)
 * ✓ E. Erase Subsequences (`1303E`)
 
+### Codeforces Round #633 (Div. 2)
+
+* ✓ A. Filling Diamonds (`1339A`)
+* ✓ B. Sorted Adjacent Differences (`1339B`)
+* ✓ C. Powered Addition (`1339C`)
+* ✓ D. Edge Weight Assignment (`1339D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
