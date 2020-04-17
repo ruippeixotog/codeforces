@@ -327,6 +327,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ D. Fill The Bag (`1303D`)
 * ✓ E. Erase Subsequences (`1303E`)
 
+### Codeforces Round #626 (Div. 1)
+
+* ✓ A. Unusual Competitions (`1322A`)
+* ✓ B. Present (`1322B`)
+
 ### Codeforces Round #633 (Div. 2)
 
 * ✓ A. Filling Diamonds (`1339A`)
