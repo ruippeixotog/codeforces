@@ -339,6 +339,14 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Powered Addition (`1339C`)
 * ✓ D. Edge Weight Assignment (`1339D`)
 
+### Microsoft Q# Coding Contest - Summer 2020 - Warmup
+
+* ✓ A1. Distinguish I from X (`1356A1`)
+* ✓ A2. Distinguish I from Z (`1356A2`)
+* ✓ A3. Distinguish Z from S (`1356A3`)
+* ✓ A4. Distinguish I ⊗ X from CNOT (`1356A4`)
+* ✓ A5. Distinguish Z from -Z (`1356A5`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
