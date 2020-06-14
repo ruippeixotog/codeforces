@@ -349,6 +349,8 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ B1. Increment (`1356B1`)
 * ✓ B2. Decrement (`1356B2`)
 * ✓ C. Prepare state |01⟩ + |10⟩ + |11⟩ (`1356C`)
+* ✓ D1. Quantum Classification - 1 (`1356D1`)
+* ✓ D2. Quantum Classification - 2 (`1356D2`)
 
 ### Interactive Problem Training Contest
 
