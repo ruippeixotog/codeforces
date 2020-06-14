@@ -17,13 +17,9 @@ namespace A4 {
     @Test("QuantumSimulator")
     operation Test () : Unit {
         for (_ in 0..100) {
-            Fact(Solve(IX) == 0, "Solve(I⊗X) was not 0");
+            Fact(Solve(ApplyToElementCA(X, 1, _)) == 0, "Solve(I⊗X) was not 0");
             Fact(Solve(CNOTArr) == 1, "Solve(S) was not 1");
         }
-    }
-
-    operation IX (qs : Qubit[]): Unit is Adj+Ctl {
-        X(qs[1]);
     }
 
     operation CNOTArr (qs : Qubit[]): Unit is Adj+Ctl {
