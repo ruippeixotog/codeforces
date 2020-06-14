@@ -346,6 +346,9 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A3. Distinguish Z from S (`1356A3`)
 * ✓ A4. Distinguish I ⊗ X from CNOT (`1356A4`)
 * ✓ A5. Distinguish Z from -Z (`1356A5`)
+* ✓ B1. Increment (`1356B1`)
+* ✓ B2. Decrement (`1356B2`)
+* ✓ C. Prepare state |01⟩ + |10⟩ + |11⟩ (`1356C`)
 
 ### Interactive Problem Training Contest
 
