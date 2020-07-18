@@ -357,6 +357,11 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A1. Figure out direction of CNOT (`1357A1`)
 * ✓ A2. Distinguish I, CNOTs and SWAP (`1357A2`)
 * ✓ A3. Distinguish H from X (`1357A3`)
+* ✓ A4. Distinguish Rz from R1 (`1357A4`)
+* ✓ A5. Distinguish Rz(θ) from Ry(θ) (`1357A5`)
+* ✓ A6. Distinguish four Pauli gates (`1357A6`)
+* ✓ A7. Distinguish Y, XZ, -Y and -XZ (`1357A7`)
+* ✓ B1. "Is the bit string balanced?" oracle (`1357B1`)
 
 ### Interactive Problem Training Contest
 
