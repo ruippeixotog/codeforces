@@ -352,6 +352,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ D1. Quantum Classification - 1 (`1356D1`)
 * ✓ D2. Quantum Classification - 2 (`1356D2`)
 
+### Microsoft Q# Coding Contest - Summer 2020
+
+* ✓ A1. Figure out direction of CNOT (`1357A1`)
+* ✓ A2. Distinguish I, CNOTs and SWAP (`1357A2`)
+* ✓ A3. Distinguish H from X (`1357A3`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
