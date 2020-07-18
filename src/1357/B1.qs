@@ -1,7 +1,6 @@
 namespace B1 {
     open Microsoft.Quantum.Arithmetic;
     open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Diagnostics;
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Math;
@@ -22,7 +21,7 @@ namespace B1 {
     }
 
     operation Solve (inputs : Qubit[], output : Qubit) : Unit is Adj+Ctl {
-        let inputLenBits = Ceiling(Lg(IntAsDouble(Length(inputs))));
+        let inputLenBits = BitSizeI(Length(inputs));
         using (cnt = Qubit[inputLenBits]) {
             SumBits(inputs, LittleEndian(cnt));
             (ControlledOnInt(Length(inputs) / 2, X))(cnt, output);
