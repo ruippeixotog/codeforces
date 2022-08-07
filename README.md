@@ -363,6 +363,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A7. Distinguish Y, XZ, -Y and -XZ (`1357A7`)
 * ✓ B1. "Is the bit string balanced?" oracle (`1357B1`)
 
+### Codeforces Round #802 (Div. 2)
+
+* ✓ A. Optimal Path (`1700A`)
+* ✓ C. Helping the Nature (`1700C`)
+* ✓ D. River Locks (`1700D`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
