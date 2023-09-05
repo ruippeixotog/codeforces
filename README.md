@@ -369,6 +369,12 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ C. Helping the Nature (`1700C`)
 * ✓ D. River Locks (`1700D`)
 
+### Codeforces Round 893 (Div. 2)
+
+* ✓ A. Buttons (`1858A`)
+* ✓ B. The Walkway (`1858B`)
+* ✓ C. Yet Another Permutation Problem (`1858C`)
+
 ### Interactive Problem Training Contest
 
 * ✓ A. Guess the Number (`101021A`)
