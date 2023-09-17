@@ -374,6 +374,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 * ✓ A. Buttons (`1858A`)
 * ✓ B. The Walkway (`1858B`)
 * ✓ C. Yet Another Permutation Problem (`1858C`)
+* ✓ D. Trees and Segments (`1858D`)
 
 ### Interactive Problem Training Contest
 
