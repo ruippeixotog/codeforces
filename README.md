@@ -366,6 +366,7 @@ The following is the list of the problems solved. Each problem identifier is spe
 ### Codeforces Round #802 (Div. 2)
 
 * ✓ A. Optimal Path (`1700A`)
+* ✓ B. Palindromic Numbers (`1700B`)
 * ✓ C. Helping the Nature (`1700C`)
 * ✓ D. River Locks (`1700D`)
 
